@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
@@ -16,8 +18,10 @@ public class GroupCreationTests {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
-    baseUrl = "https://www.katalon.com/";
+    System.setProperty("webdriver.chrome.driver","C:\\Users\\KaMo.by Admin\\Downloads\\chromedriver_win32\\chromedriver.exe");
+    driver = new ChromeDriver();
+    //baseUrl = "https://www.katalon.com/";
+    driver.get("http://localhost/addressbook/");
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 

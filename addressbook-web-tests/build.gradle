@@ -5,6 +5,11 @@ repositories {
     mavenLocal()
 }
 
+test{
+    useTestNG()
+    scanForTestClasses = false
+}
+
 dependencies{
     implementation 'org.testng:testng:7.1.0'
     compile 'org.seleniumhq.selenium:selenium-java:2.53.1'
