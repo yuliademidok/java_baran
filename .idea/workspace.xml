@@ -46,6 +46,7 @@
   </component>
   <component name="ProjectId" id="1W1OGPzqFgWyVRwxbIk0lKCw7zH" />
   <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/src" />
     <property name="project.structure.last.edited" value="Modules" />
