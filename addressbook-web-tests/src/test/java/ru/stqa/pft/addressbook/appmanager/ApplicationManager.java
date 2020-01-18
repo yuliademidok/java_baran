@@ -17,7 +17,6 @@ public class ApplicationManager {
     public void init() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("http://localhost/addressbook/");
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(driver);
