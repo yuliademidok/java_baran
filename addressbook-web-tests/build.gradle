@@ -12,6 +12,7 @@ test{
 
 dependencies{
     implementation 'org.testng:testng:7.1.0'
-    compile 'org.seleniumhq.selenium:selenium-java:2.53.1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation 'com.katalon:com.katalon.platform.parent:1.0.15'
 }

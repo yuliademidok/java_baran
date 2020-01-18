@@ -81,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EquationTests.test1">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="EquationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,12 +142,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupDeletionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.tests.GroupDeletionTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.tests.GroupCreationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.EquationTests.test1" />
         <item itemvalue="Gradle.EquationTests.test0" />
         <item itemvalue="Gradle.EquationTests" />
         <item itemvalue="Gradle.GroupModificationTests" />
-        <item itemvalue="Gradle.GroupDeletionTests" />
       </list>
     </recent_temporary>
   </component>
