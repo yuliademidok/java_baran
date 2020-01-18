@@ -14,7 +14,9 @@ public class Equation {
 
         double d = b*b - 4*a*c;
 
-        if (d > 0) {
+        if (a == 0 || b == 0 || c == 0) {
+            n = -1;
+        } else if (d > 0) {
             n = 2;
         } else if (d == 0) {
             n = 1;
