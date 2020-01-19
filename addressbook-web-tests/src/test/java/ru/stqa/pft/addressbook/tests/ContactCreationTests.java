@@ -8,5 +8,6 @@ public class ContactCreationTests extends BaseTest {
     public void testContactCreation() throws Exception {
         app.getNavigationHelper().goToHomePage();
         app.getContactHelper().initContactCreation();
+        app.getContactHelper().fillContactForm();
     }
 }
