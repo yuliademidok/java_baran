@@ -18,4 +18,5 @@ dependencies{
     // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
     compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.8.0'
 
+    //implementation 'org.slf4j:slf4j-parent:1.7.30'
 }
