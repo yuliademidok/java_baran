@@ -81,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Equality">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Equality" />
       <module name="sandbox.main" />
@@ -95,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EquationTests.test1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.sandbox.EquationTests.test1&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.tests.GroupCreationTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -115,12 +115,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.testGroupCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.tests.GroupCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.tests.GroupCreationTests.testGroupCreation&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.GroupCreationTests.testGroupCreation" />
         <item itemvalue="Application.Equality" />
         <item itemvalue="Gradle.GroupModificationTests" />
-        <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupDeletionTests" />
-        <item itemvalue="Gradle.EquationTests.test1" />
       </list>
     </recent_temporary>
   </component>
