@@ -25,4 +25,15 @@ public class ContactHelper extends BaseHelper {
         click(By.name("submit"));
     }
 
+    public void initContactModification() {
+        click(By.xpath("//img[@title='Edit']"));
+    }
+
+    public void updateContactForm() {
+        click(By.name("update"));
+    }
+
+    public void returnToHomePage() {
+        click(By.name("home page"));
+    }
 }
