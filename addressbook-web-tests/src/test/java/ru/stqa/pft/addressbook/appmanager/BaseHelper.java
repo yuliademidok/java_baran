@@ -25,6 +25,15 @@ public class BaseHelper {
         }
     }
 
+    public boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
     public boolean isAlertPresent() {
         try {
             driver.switchTo().alert();
