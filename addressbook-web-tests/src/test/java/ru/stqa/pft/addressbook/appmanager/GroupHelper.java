@@ -37,11 +37,23 @@ public class GroupHelper extends BaseHelper {
     }
 
     public void selectGroup() {
-        click(By.xpath("//div[@id='content']/form/span"));
+       //click(By.xpath("//div[@id='content']/form/span"));
         click(By.name("selected[]"));
     }
 
     public void initGroupModification() {
         click(By.name("edit"));
+    }
+
+    public void createGroup (GroupData groupData) {
+        initGroupCreation();
+        fillGroupForm(groupData);
+        submitGroupCreation();
+        returnToGroupPage();
+
+    }
+
+    public boolean isThereAGroup() {
+        return (isElementPresent(By.name("selected[]")));
     }
 }

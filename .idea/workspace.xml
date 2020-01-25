@@ -81,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactModificationTests">
+  <component name="RunManager" selected="Gradle.GroupModificationTests">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactModificationTests" />
-        <item itemvalue="Gradle.ContactCreationTests" />
         <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupDeletionTests" />
+        <item itemvalue="Gradle.ContactModificationTests" />
+        <item itemvalue="Gradle.ContactCreationTests" />
       </list>
     </recent_temporary>
   </component>
