@@ -34,7 +34,14 @@ public class BaseHelper {
         }
     }
 
-    public boolean isAlertPresent() {
+    public void acceptAlert() {
+        if (isAlertPresent()) {
+            Alert alert = driver.switchTo().alert();
+            alert.accept();
+        }
+    }
+
+    private boolean isAlertPresent() {
         try {
             driver.switchTo().alert();
             return true;
@@ -42,5 +49,4 @@ public class BaseHelper {
             return false;
         }
     }
-
 }
