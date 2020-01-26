@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.BrowserType;
 
 public class BaseTest {
 
-    protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
+    final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {

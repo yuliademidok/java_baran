@@ -60,6 +60,10 @@ public class ContactHelper extends BaseHelper {
         return (isElementPresent(By.name("selected[]")));
     }
 
+    public int getContactCount() {
+        return driver.findElements(By.name("selected[]")).size();
+    }
+
 
     /*public void returnToHomePage() {
         click(By.name("home page"));
