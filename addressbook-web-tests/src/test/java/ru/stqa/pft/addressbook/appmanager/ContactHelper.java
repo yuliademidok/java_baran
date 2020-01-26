@@ -33,16 +33,16 @@ public class ContactHelper extends BaseHelper {
         click(By.name("submit"));
     }
 
-    public void initContactModification() {
-        click(By.xpath("//img[@title='Edit']"));
+    public void initContactModification(int index) {
+        driver.findElements(By.xpath("//img[@title='Edit']")).get(index).click();
     }
 
     public void updateContactForm() {
         click(By.name("update"));
     }
 
-    public void selectContact() {
-        click(By.name("selected[]"));
+    public void selectContact(int index) {
+        driver.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void deleteSelectedContact() {

@@ -13,7 +13,7 @@ public class ContactModificationTests extends BaseTest {
                     "q@com", "123", "test1"), true);
         }
         int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().initContactModification();
+        app.getContactHelper().initContactModification(before -1);
         app.getContactHelper().fillContactForm(new ContactData("1", "2", "3", "4",
                 "6", null), false);
         app.getContactHelper().updateContactForm();
