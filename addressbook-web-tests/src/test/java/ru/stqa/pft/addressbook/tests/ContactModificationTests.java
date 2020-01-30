@@ -10,7 +10,7 @@ import java.util.List;
 public class ContactModificationTests extends BaseTest {
     @Test(enabled = false)
     public void testContactModification() {
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
         if (!app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new ContactData("yulia", "dem", "minsk",
                     "q@com", "123", "test1"), true);
@@ -21,7 +21,7 @@ public class ContactModificationTests extends BaseTest {
                 "6", null);
         app.getContactHelper().fillContactForm(contact, false);
         app.getContactHelper().updateContactForm();
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(before.size(), after.size());
 
