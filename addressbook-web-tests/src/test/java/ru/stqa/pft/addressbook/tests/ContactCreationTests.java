@@ -11,7 +11,7 @@ public class ContactCreationTests extends BaseTest {
 
     @Test(enabled = false)
     public void testContactCreation() {
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
         List<ContactData> before = app.getContactHelper().getContactList();
 
         //Test fails when there is no Group named 'test1'
@@ -19,7 +19,7 @@ public class ContactCreationTests extends BaseTest {
         ContactData contact = new ContactData("yulia", "dem", "minsk",
                 "q@com", "123", "test1");
         app.getContactHelper().createContact(contact, true);
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(before.size() + 1, after.size());
 

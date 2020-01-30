@@ -69,23 +69,22 @@ public class GroupHelper extends BaseHelper {
         returnToGroupPage();
     }
 
-    public boolean isThereAGroup() {
-        return (isElementPresent(By.name("selected[]")));
-    }
-
-    public int getGroupCount() {
-        return driver.findElements(By.name("selected[]")).size();
-    }
-
     public List<GroupData> list() {
         List<GroupData> groups = new ArrayList<>();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements) {
             String name = element.getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            GroupData groupData = new GroupData(id, name, null, null);
-            groups.add(groupData);
+            groups.add(new GroupData(id, name, null, null));
         }
         return groups;
+    }
+
+    public boolean isThereAGroup() {
+        return (isElementPresent(By.name("selected[]")));
+    }
+
+    public int getGroupCount() {
+        return driver.findElements(By.name("selected[]")).size();
     }
 }
