@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static org.testng.Assert.fail;
 
 public class ApplicationManager {
-    public WebDriver driver;
+    private WebDriver driver;
 
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
@@ -36,7 +36,6 @@ public class ApplicationManager {
             WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
         }
-
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(driver);
@@ -55,11 +54,11 @@ public class ApplicationManager {
         }
     }
 
-    public NavigationHelper getNavigationHelper() {
+    public NavigationHelper goTo() {
         return navigationHelper;
     }
 
-    public GroupHelper getGroupHelper() {
+    public GroupHelper group() {
         return groupHelper;
     }
 
