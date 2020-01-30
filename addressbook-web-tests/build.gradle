@@ -16,6 +16,6 @@ dependencies{
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation 'com.katalon:com.katalon.platform.parent:1.0.15'
     // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.8.0'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.8.1'
 
 }
