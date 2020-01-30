@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -14,6 +13,9 @@ public class ContactCreationTests extends BaseTest {
     public void testContactCreation() {
         app.getNavigationHelper().goToHomePage();
         List<ContactData> before = app.getContactHelper().getContactList();
+
+        //Test fails when there is no Group named 'test1'
+
         ContactData contact = new ContactData("yulia", "dem", "minsk",
                 "q@com", "123", "test1");
         app.getContactHelper().createContact(contact, true);
